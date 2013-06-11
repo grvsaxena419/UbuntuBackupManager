@@ -1,0 +1,1348 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.0.0-12-generic (buildd@vernadsky) (gcc version 4.6.1 (Ubuntu/Linaro 4.6.1-9ubuntu3) ) #20-Ubuntu SMP Fri Oct 7 14:50:42 UTC 2011 (Ubuntu 3.0.0-12.20-generic 3.0.4)
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   NSC Geode by NSC
+[    0.000000]   Cyrix CyrixInstead
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   Transmeta GenuineTMx86
+[    0.000000]   Transmeta TransmetaCPU
+[    0.000000]   UMC UMC UMC UMC
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000]  BIOS-e820: 0000000000000000 - 000000000009fc00 (usable)
+[    0.000000]  BIOS-e820: 000000000009fc00 - 00000000000a0000 (reserved)
+[    0.000000]  BIOS-e820: 00000000000f0000 - 0000000000100000 (reserved)
+[    0.000000]  BIOS-e820: 0000000000100000 - 000000001fff0000 (usable)
+[    0.000000]  BIOS-e820: 000000001fff0000 - 0000000020000000 (ACPI data)
+[    0.000000]  BIOS-e820: 00000000fffc0000 - 0000000100000000 (reserved)
+[    0.000000] Notice: NX (Execute Disable) protection missing in CPU!
+[    0.000000] NX (Execute Disable) protection: approximated by x86 segment limits
+[    0.000000] DMI 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] e820 update range: 0000000000000000 - 0000000000010000 (usable) ==> (reserved)
+[    0.000000] e820 remove range: 00000000000a0000 - 0000000000100000 (usable)
+[    0.000000] last_pfn = 0x1fff0 max_arch_pfn = 0x100000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR variable ranges disabled:
+[    0.000000] x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] initial memory mapped : 0 - 01c00000
+[    0.000000] Base memory trampoline at [c009b000] 9b000 size 16384
+[    0.000000] init_memory_mapping: 0000000000000000-000000001fff0000
+[    0.000000]  0000000000 - 0000400000 page 4k
+[    0.000000]  0000400000 - 001fc00000 page 2M
+[    0.000000]  001fc00000 - 001fff0000 page 4k
+[    0.000000] kernel direct mapping tables up to 1fff0000 @ 1bfb000-1c00000
+[    0.000000] RAMDISK: 1eb99000 - 1f897000
+[    0.000000] ACPI: RSDP 000e0000 00024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 1fff0030 00034 (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 1fff00f0 000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 1fff0410 01B96 (v01 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 1fff0200 00040
+[    0.000000] ACPI: SSDT 1fff0240 001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] 0MB HIGHMEM available.
+[    0.000000] 511MB LOWMEM available.
+[    0.000000]   mapped low ram: 0 - 1fff0000
+[    0.000000]   low ram: 0 - 1fff0000
+[    0.000000] Zone PFN ranges:
+[    0.000000]   DMA      0x00000010 -> 0x00001000
+[    0.000000]   Normal   0x00001000 -> 0x0001fff0
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] early_node_map[2] active PFN ranges
+[    0.000000]     0: 0x00000010 -> 0x0000009f
+[    0.000000]     0: 0x00000100 -> 0x0001fff0
+[    0.000000] On node 0 totalpages: 130943
+[    0.000000] free_area_init_node: node 0, pgdat c17b11c0, node_mem_map dfbef200
+[    0.000000]   DMA zone: 32 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 3951 pages, LIFO batch:0
+[    0.000000]   Normal zone: 992 pages used for memmap
+[    0.000000]   Normal zone: 125968 pages, LIFO batch:31
+[    0.000000] Using APIC driver default
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] SMP: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.000000] Found and enabled local APIC!
+[    0.000000] nr_irqs_gsi: 16
+[    0.000000] PM: Registered nosave memory: 000000000009f000 - 00000000000a0000
+[    0.000000] PM: Registered nosave memory: 00000000000a0000 - 00000000000f0000
+[    0.000000] PM: Registered nosave memory: 00000000000f0000 - 0000000000100000
+[    0.000000] Allocating PCI resources starting at 20000000 (gap: 20000000:dffc0000)
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:1 nr_node_ids:1
+[    0.000000] PERCPU: Embedded 12 pages/cpu @de400000 s26240 r0 d22912 u4194304
+[    0.000000] pcpu-alloc: s26240 r0 d22912 u4194304 alloc=1*4194304
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129919
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-3.0.0-12-generic root=UUID=0afe9973-93d2-495f-8985-c3c2496ba39e ro quiet splash vt.handoff=7
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Initializing CPU#0
+[    0.000000] allocated 2096640 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Initializing HighMem for node 0 (00000000:00000000)
+[    0.000000] Memory: 494320k/524224k available (5329k kernel code, 29452k reserved, 2589k data, 696k init, 0k highmem)
+[    0.000000] virtual kernel memory layout:
+[    0.000000]     fixmap  : 0xfff16000 - 0xfffff000   ( 932 kB)
+[    0.000000]     pkmap   : 0xff800000 - 0xffc00000   (4096 kB)
+[    0.000000]     vmalloc : 0xe07f0000 - 0xff7fe000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfff0000   ( 511 MB)
+[    0.000000]       .init : 0xc17bc000 - 0xc186a000   ( 696 kB)
+[    0.000000]       .data : 0xc1534784 - 0xc17bbd80   (2589 kB)
+[    0.000000]       .text : 0xc1000000 - 0xc1534784   (5329 kB)
+[    0.000000] Checking if this processor honours the WP bit even in supervisor mode...Ok.
+[    0.000000] SLUB: Genslabs=15, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] NR_IRQS:2304 nr_irqs:256 16
+[    0.000000] CPU 0 irqstacks, hard=de006000 soft=de008000
+[    0.000000] vt handoff: transparent VT on vt#7
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] Fast TSC calibration failed
+[    0.000000] TSC: Unable to calibrate against PIT
+[    0.000000] TSC: using PMTIMER reference calibration
+[    0.000000] Detected 2245.987 MHz processor.
+[    0.028219] Calibrating delay loop (skipped), value calculated using timer frequency.. 4491.97 BogoMIPS (lpj=8983948)
+[    0.028536] pid_max: default: 32768 minimum: 301
+[    0.028893] Security Framework initialized
+[    0.032610] AppArmor: AppArmor initialized
+[    0.032689] Yama: becoming mindful.
+[    0.033431] Mount-cache hash table entries: 512
+[    0.038026] Initializing cgroup subsys cpuacct
+[    0.038226] Initializing cgroup subsys memory
+[    0.038556] Initializing cgroup subsys devices
+[    0.038709] Initializing cgroup subsys freezer
+[    0.038773] Initializing cgroup subsys net_cls
+[    0.038864] Initializing cgroup subsys blkio
+[    0.039191] Initializing cgroup subsys perf_event
+[    0.039740] mce: CPU supports 0 MCE banks
+[    0.040141] using mwait in idle threads.
+[    0.072937] SMP alternatives: switching to UP code
+[    0.480029] Freeing SMP alternatives: 24k freed
+[    0.480707] ACPI: Core revision 20110413
+[    0.488074] ACPI: setting ELCR to 0200 (from 0e20)
+[    0.489383] ftrace: allocating 24885 entries in 49 pages
+[    0.558198] weird, boot CPU (#0) not listed by the BIOS.
+[    0.560396] SMP motherboard not detected.
+[    0.560648] Enabling APIC mode:  Flat.  Using 0 I/O APICs
+[    0.564034] APIC calibration not consistent with PM-Timer: 101ms instead of 100ms
+[    0.564034] APIC delta adjusted to PM-Timer: 6250013 (6353885)
+[    0.564034] SMP disabled
+[    0.564034] Performance Events: unsupported p6 CPU model 37 no PMU driver, software events only.
+[    0.620577] Brought up 1 CPUs
+[    0.621327] Total of 1 processors activated (4491.97 BogoMIPS).
+[    0.632506] devtmpfs: initialized
+[    0.645213] print_constraints: dummy: 
+[    0.648155] Time: 12:59:42  Date: 01/26/12
+[    0.649901] NET: Registered protocol family 16
+[    0.653132] EISA bus registered
+[    0.653260] ACPI: bus type pci registered
+[    0.728180] PCI: PCI BIOS revision 2.10 entry at 0xfc060, last bus=0
+[    0.728203] PCI: Using configuration type 1 for base access
+[    0.733241] bio: create slab <bio-0> at 0
+[    0.738421] ACPI: EC: Look up EC in DSDT
+[    0.740704] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.745526] ACPI: Interpreter enabled
+[    0.745545] ACPI: (supports S0 S5)
+[    0.745581] ACPI: Using PIC for interrupt routing
+[    0.749309] ACPI: No dock devices found.
+[    0.749319] HEST: Table not found.
+[    0.749333] PCI: Ignoring host bridge windows from ACPI; if necessary, use "pci=use_crs" and report a bug
+[    0.753127] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.756257] pci_root PNP0A03:00: host bridge window [io  0x0000-0x0cf7] (ignored)
+[    0.756280] pci_root PNP0A03:00: host bridge window [io  0x0d00-0xffff] (ignored)
+[    0.756294] pci_root PNP0A03:00: host bridge window [mem 0x000a0000-0x000bffff] (ignored)
+[    0.756307] pci_root PNP0A03:00: host bridge window [mem 0x20000000-0xffdfffff] (ignored)
+[    0.757804] pci 0000:00:00.0: [8086:1237] type 0 class 0x000600
+[    0.758882] pci 0000:00:01.0: [8086:7000] type 0 class 0x000601
+[    0.760224] pci 0000:00:01.1: [8086:7111] type 0 class 0x000101
+[    0.760876] pci 0000:00:01.1: reg 20: [io  0xd000-0xd00f]
+[    0.761238] pci 0000:00:02.0: [80ee:beef] type 0 class 0x000300
+[    0.762654] pci 0000:00:02.0: reg 10: [mem 0xe0000000-0xe0ffffff pref]
+[    0.768326] pci 0000:00:03.0: [8086:100e] type 0 class 0x000200
+[    0.768875] pci 0000:00:03.0: reg 10: [mem 0xf0000000-0xf001ffff]
+[    0.769757] pci 0000:00:03.0: reg 18: [io  0xd010-0xd017]
+[    0.771895] pci 0000:00:04.0: [80ee:cafe] type 0 class 0x000880
+[    0.772356] pci 0000:00:04.0: reg 10: [io  0xd020-0xd03f]
+[    0.772841] pci 0000:00:04.0: reg 14: [mem 0xf0400000-0xf07fffff]
+[    0.773329] pci 0000:00:04.0: reg 18: [mem 0xf0800000-0xf0803fff pref]
+[    0.775270] pci 0000:00:05.0: [8086:2415] type 0 class 0x000401
+[    0.775385] pci 0000:00:05.0: reg 10: [io  0xd100-0xd1ff]
+[    0.775467] pci 0000:00:05.0: reg 14: [io  0xd200-0xd23f]
+[    0.775913] pci 0000:00:06.0: [106b:003f] type 0 class 0x000c03
+[    0.776159] pci 0000:00:06.0: reg 10: [mem 0xf0804000-0xf0804fff]
+[    0.778772] pci 0000:00:07.0: [8086:7113] type 0 class 0x000680
+[    0.780569] pci 0000:00:0d.0: [8086:2829] type 0 class 0x000106
+[    0.781126] pci 0000:00:0d.0: reg 10: [io  0xd240-0xd247]
+[    0.782245] pci 0000:00:0d.0: reg 18: [io  0xd250-0xd257]
+[    0.783374] pci 0000:00:0d.0: reg 20: [io  0xd260-0xd26f]
+[    0.783852] pci 0000:00:0d.0: reg 24: [mem 0xf0806000-0xf0807fff]
+[    0.784643] pci_bus 0000:00: on NUMA node 0
+[    0.784689] ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+[    0.785805]  pci0000:00: Unable to request _OSC control (_OSC support mask: 0x1e)
+[    0.791392] ACPI: PCI Interrupt Link [LNKA] (IRQs *5 9 10 11)
+[    0.791656] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 10 *11)
+[    0.791937] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 9 *10 11)
+[    0.792080] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 *9 10 11)
+[    0.794040] vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+[    0.794105] vgaarb: loaded
+[    0.794113] vgaarb: bridge control possible 0000:00:02.0
+[    0.795442] SCSI subsystem initialized
+[    0.795860] libata version 3.00 loaded.
+[    0.796020] usbcore: registered new interface driver usbfs
+[    0.796089] usbcore: registered new interface driver hub
+[    0.796257] usbcore: registered new device driver usb
+[    0.804891] PCI: Using ACPI for IRQ routing
+[    0.804917] PCI: pci_cache_line_size set to 64 bytes
+[    0.805315] reserve RAM buffer: 000000000009fc00 - 000000000009ffff 
+[    0.805332] reserve RAM buffer: 000000001fff0000 - 000000001fffffff 
+[    0.806575] NetLabel: Initializing
+[    0.806590] NetLabel:  domain hash size = 128
+[    0.806598] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.806639] NetLabel:  unlabeled traffic allowed by default
+[    0.838435] AppArmor: AppArmor Filesystem Enabled
+[    0.838619] pnp: PnP ACPI init
+[    0.838648] ACPI: bus type pnp registered
+[    0.838944] pnp 00:00: [bus 00-ff]
+[    0.838956] pnp 00:00: [io  0x0cf8-0x0cff]
+[    0.838970] pnp 00:00: [io  0x0000-0x0cf7 window]
+[    0.838984] pnp 00:00: [io  0x0d00-0xffff window]
+[    0.838997] pnp 00:00: [mem 0x000a0000-0x000bffff window]
+[    0.839011] pnp 00:00: [mem 0x20000000-0xffdfffff window]
+[    0.839238] pnp 00:00: Plug and Play ACPI device, IDs PNP0a03 (active)
+[    0.839290] pnp 00:01: [io  0x0060]
+[    0.839304] pnp 00:01: [io  0x0064]
+[    0.839329] pnp 00:01: [irq 1]
+[    0.839388] pnp 00:01: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.839422] pnp 00:02: [io  0x0000-0x000f]
+[    0.839436] pnp 00:02: [io  0x0080-0x008f]
+[    0.839450] pnp 00:02: [io  0x00c0-0x00df]
+[    0.839467] pnp 00:02: [dma 4]
+[    0.839512] pnp 00:02: Plug and Play ACPI device, IDs PNP0200 (active)
+[    0.839609] pnp 00:03: [irq 12]
+[    0.839657] pnp 00:03: Plug and Play ACPI device, IDs PNP0f03 (active)
+[    0.839703] pnp 00:04: [io  0x0378-0x037f]
+[    0.839718] pnp 00:04: [io  0x0778-0x077f]
+[    0.839733] pnp 00:04: [irq 7]
+[    0.839780] pnp 00:04: Plug and Play ACPI device, IDs PNP0400 (active)
+[    0.840628] pnp: PnP ACPI: found 5 devices
+[    0.840638] ACPI: ACPI bus type pnp unregistered
+[    0.840651] PnPBIOS: Disabled by ACPI PNP
+[    0.880229] Switching to clocksource acpi_pm
+[    0.881254] PCI: max bus depth: 0 pci_try_num: 1
+[    0.881292] pci_bus 0000:00: resource 0 [io  0x0000-0xffff]
+[    0.881304] pci_bus 0000:00: resource 1 [mem 0x00000000-0xffffffff]
+[    0.881413] NET: Registered protocol family 2
+[    0.883020] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.883353] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.883477] TCP bind hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.883587] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.883599] TCP reno registered
+[    0.883613] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.883633] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.883832] NET: Registered protocol family 1
+[    0.883884] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.883950] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.883995] pci 0000:00:02.0: Boot video device
+[    0.884821] Switched to NOHz mode on CPU #0
+[    0.887356] PCI: CLS 0 bytes, default 64
+[    0.889767] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.895163] Trying to unpack rootfs image as initramfs...
+[    0.905852] audit: initializing netlink socket (disabled)
+[    0.906589] type=2000 audit(1327582781.904:1): initialized
+[    0.955992] HugeTLB registered 4 MB page size, pre-allocated 0 pages
+[    0.964314] VFS: Disk quotas dquot_6.5.2
+[    0.964438] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.965409] fuse init (API version 7.16)
+[    0.965549] msgmni has been set to 965
+[    0.986893] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.992208] io scheduler noop registered
+[    0.992219] io scheduler deadline registered
+[    0.992249] io scheduler cfq registered (default)
+[    0.992571] pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+[    0.992631] pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+[    0.992984] ACPI: Deprecated procfs I/F for AC is loaded, please retry with CONFIG_ACPI_PROCFS_POWER cleared
+[    0.993115] ACPI: AC Adapter [AC] (on-line)
+[    0.993232] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.993253] ACPI: Power Button [PWRF]
+[    0.993345] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    0.993359] ACPI: Sleep Button [SLPF]
+[    0.993420] ACPI: acpi_idle registered with cpuidle
+[    0.994721] ERST: Table is not found!
+[    0.997379] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.001907] isapnp: Scanning for PnP cards...
+[    1.060589] Linux agpgart interface v0.103
+[    1.074327] brd: module loaded
+[    1.075163] loop: module loaded
+[    1.075744] ata_piix 0000:00:01.1: version 2.13
+[    1.088922] scsi0 : ata_piix
+[    1.092117] scsi1 : ata_piix
+[    1.092476] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    1.092491] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    1.093024] Fixed MDIO Bus: probed
+[    1.093065] PPP generic driver version 2.4.2
+[    1.093229] tun: Universal TUN/TAP device driver, 1.6
+[    1.093239] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.093481] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.093505] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.093967] ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 11
+[    1.093983] PCI: setting IRQ 11 as level-triggered
+[    1.094027] ohci_hcd 0000:00:06.0: PCI INT A -> Link[LNKB] -> GSI 11 (level, low) -> IRQ 11
+[    1.094102] ohci_hcd 0000:00:06.0: OHCI Host Controller
+[    1.094206] ohci_hcd 0000:00:06.0: new USB bus registered, assigned bus number 1
+[    1.094388] ohci_hcd 0000:00:06.0: irq 11, io mem 0xf0804000
+[    1.289152] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[    1.291450] hub 1-0:1.0: USB hub found
+[    1.292665] ata2.00: configured for UDMA/33
+[    1.295355] hub 1-0:1.0: 8 ports detected
+[    1.300208] uhci_hcd: USB Universal Host Controller Interface driver
+[    1.300439] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    1.312608] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.314582] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    1.359992] mousedev: PS/2 mouse device common for all mice
+[    1.370619] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    1.378675] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    1.380675] rtc0: alarms up to one day, 114 bytes nvram
+[    1.380942] device-mapper: uevent: version 1.0.3
+[    1.381164] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+[    1.381218] EISA: Probing bus 0 at eisa.0
+[    1.381241] Cannot allocate resource for EISA slot 4
+[    1.381260] EISA: Detected 0 cards.
+[    1.381899] cpufreq-nforce2: No nForce2 chipset.
+[    1.381917] cpuidle: using governor ladder
+[    1.381927] cpuidle: using governor menu
+[    1.381938] EFI Variables Facility v0.08 2004-May-17
+[    1.382396] TCP cubic registered
+[    1.382593] NET: Registered protocol family 10
+[    1.383300] NET: Registered protocol family 17
+[    1.383561] Registering the dns_resolver key type
+[    1.383687] Using IPI No-Shortcut mode
+[    1.383937] PM: Hibernation image not present or could not be loaded.
+[    1.388126] registered taskstats version 1
+[    1.660543] isapnp: No Plug & Play device found
+[    1.694339] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[    1.706694] sr0: scsi3-mmc drive: 32x/32x xa/form2 tray
+[    1.706726] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    1.708314] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    1.717204] sr 1:0:0:0: Attached scsi generic sg0 type 5
+[    1.840608] usb 1-1: new full speed USB device number 2 using ohci_hcd
+[    1.896537] Refined TSC clocksource calibration: 2245.992 MHz.
+[    1.896676] Switching to clocksource tsc
+[    1.930959] Freeing initrd memory: 13304k freed
+[    1.988307]   Magic number: 12:636:987
+[    1.988861] rtc_cmos rtc_cmos: setting system clock to 2012-01-26 12:59:43 UTC (1327582783)
+[    1.990748] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    1.990763] EDD information not available.
+[    1.995183] Freeing unused kernel memory: 696k freed
+[    2.001947] Write protecting the kernel text: 5332k
+[    2.003032] Write protecting the kernel read-only data: 2188k
+[    2.142440] udevd[80]: starting version 173
+[    2.815493] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    2.815517] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    2.896715] ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+[    2.896733] PCI: setting IRQ 10 as level-triggered
+[    2.896753] e1000 0000:00:03.0: PCI INT A -> Link[LNKC] -> GSI 10 (level, low) -> IRQ 10
+[    3.333251] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/input/input3
+[    3.334154] generic-usb 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[    3.334279] usbcore: registered new interface driver usbhid
+[    3.334292] usbhid: USB HID core driver
+[    3.463079] e1000 0000:00:03.0: eth0: (PCI:33MHz:32-bit) 08:00:27:57:1d:a9
+[    3.463877] e1000 0000:00:03.0: eth0: Intel(R) PRO/1000 Network Connection
+[    3.465327] ahci 0000:00:0d.0: version 3.0
+[    3.466294] ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 5
+[    3.466313] PCI: setting IRQ 5 as level-triggered
+[    3.466337] ahci 0000:00:0d.0: PCI INT A -> Link[LNKA] -> GSI 5 (level, low) -> IRQ 5
+[    3.466765] ahci: SSS flag set, parallel bus scan disabled
+[    3.467148] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[    3.467169] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[    3.475931] scsi2 : ahci
+[    3.476668] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 5
+[    3.796500] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    3.810728] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[    3.810750] ata3.00: 16777216 sectors, multi 128: LBA48 NCQ (depth 31/32)
+[    3.811116] ata3.00: configured for UDMA/133
+[    3.812575] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[    3.814184] sd 2:0:0:0: [sda] 16777216 512-byte logical blocks: (8.58 GB/8.00 GiB)
+[    3.816349] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[    3.816525] sd 2:0:0:0: [sda] Write Protect is off
+[    3.816539] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    3.816847] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    3.838181]  sda: sda1 sda2 < sda5 >
+[    3.840485] sd 2:0:0:0: [sda] Attached SCSI disk
+[    4.138477] EXT4-fs (sda1): INFO: recovery required on readonly filesystem
+[    4.138496] EXT4-fs (sda1): write access will be enabled during recovery
+[    4.463027] EXT4-fs (sda1): orphan cleanup on readonly fs
+[    4.463085] EXT4-fs (sda1): ext4_orphan_cleanup: deleting unreferenced inode 137973
+[    4.463349] EXT4-fs (sda1): ext4_orphan_cleanup: deleting unreferenced inode 138017
+[    4.463391] EXT4-fs (sda1): ext4_orphan_cleanup: deleting unreferenced inode 137967
+[    4.463480] EXT4-fs (sda1): ext4_orphan_cleanup: deleting unreferenced inode 137970
+[    4.463531] EXT4-fs (sda1): ext4_orphan_cleanup: deleting unreferenced inode 305831
+[    4.463610] EXT4-fs (sda1): 5 orphan inodes deleted
+[    4.463621] EXT4-fs (sda1): recovery complete
+[    4.943181] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   13.227903] udevd[257]: starting version 173
+[   13.343576] Adding 522236k swap on /dev/sda5.  Priority:-1 extents:1 across:522236k 
+[   13.443452] lp: driver loaded but no devices found
+[   13.707233] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro
+[   14.624088] type=1400 audit(1327582796.130:2): apparmor="STATUS" operation="profile_load" name="/sbin/dhclient" pid=387 comm="apparmor_parser"
+[   14.662757] type=1400 audit(1327582796.170:3): apparmor="STATUS" operation="profile_load" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=387 comm="apparmor_parser"
+[   14.663047] type=1400 audit(1327582796.170:4): apparmor="STATUS" operation="profile_load" name="/usr/lib/connman/scripts/dhclient-script" pid=387 comm="apparmor_parser"
+[   14.970550] parport_pc 00:04: reported by Plug and Play ACPI
+[   15.344293] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   15.577039] piix4_smbus 0000:00:07.0: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+[   16.219253] type=1400 audit(1327582797.726:5): apparmor="STATUS" operation="profile_load" name="/usr/lib/lightdm/lightdm-guest-session-wrapper" pid=538 comm="apparmor_parser"
+[   16.255258] type=1400 audit(1327582797.762:6): apparmor="STATUS" operation="profile_replace" name="/sbin/dhclient" pid=539 comm="apparmor_parser"
+[   16.263529] type=1400 audit(1327582797.770:7): apparmor="STATUS" operation="profile_replace" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=539 comm="apparmor_parser"
+[   16.263529] type=1400 audit(1327582797.770:8): apparmor="STATUS" operation="profile_replace" name="/usr/lib/connman/scripts/dhclient-script" pid=539 comm="apparmor_parser"
+[   16.347620] type=1400 audit(1327582797.854:9): apparmor="STATUS" operation="profile_load" name="/usr/bin/evince" pid=541 comm="apparmor_parser"
+[   16.371632] type=1400 audit(1327582797.878:10): apparmor="STATUS" operation="profile_load" name="/usr/bin/evince-previewer" pid=541 comm="apparmor_parser"
+[   16.379500] type=1400 audit(1327582797.886:11): apparmor="STATUS" operation="profile_load" name="/usr/bin/evince-thumbnailer" pid=541 comm="apparmor_parser"
+[   16.560944] psmouse serio1: ID: 10 00 64
+[   16.566111] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[   17.264496] init: apport pre-start process (596) terminated with status 1
+[   17.265642] init: alsa-restore main process (607) terminated with status 19
+[   17.420684] init: apport post-stop process (627) terminated with status 1
+[   18.193631] Bluetooth: Core ver 2.16
+[   18.196615] NET: Registered protocol family 31
+[   18.196653] Bluetooth: HCI device and connection manager initialized
+[   18.196669] Bluetooth: HCI socket layer initialized
+[   18.196678] Bluetooth: L2CAP socket layer initialized
+[   18.199556] Bluetooth: SCO socket layer initialized
+[   18.225249] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   18.225275] Bluetooth: BNEP filters: protocol multicast
+[   18.244239] Bluetooth: RFCOMM TTY layer initialized
+[   18.244305] Bluetooth: RFCOMM socket layer initialized
+[   18.244336] Bluetooth: RFCOMM ver 1.11
+[   20.322218] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro,commit=0
+[   20.620747] ppdev: user-space parallel port driver
+[   20.838726] Intel ICH 0000:00:05.0: PCI INT A -> Link[LNKA] -> GSI 5 (level, low) -> IRQ 5
+[   21.184909] intel8x0_measure_ac97_clock: measured 56714 usecs (12425 samples)
+[   21.185043] intel8x0: measured clock 219081 rejected
+[   21.544366] intel8x0_measure_ac97_clock: measured 55646 usecs (12668 samples)
+[   21.544396] intel8x0: measured clock 227653 rejected
+[   21.904347] intel8x0_measure_ac97_clock: measured 55775 usecs (12661 samples)
+[   21.904390] intel8x0: measured clock 227001 rejected
+[   21.904410] intel8x0: clocking to 48000
+[   22.044219] vesafb: mode is 640x480x32, linelength=2560, pages=0
+[   22.044237] vesafb: scrolling: redraw
+[   22.044247] vesafb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[   22.044289] mtrr: your processor doesn't support write-combining
+[   22.044465] vesafb: framebuffer at 0xe0000000, mapped to 0xe0a80000, using 1216k, total 1216k
+[   22.047549] Console: switching to colour frame buffer device 80x30
+[   22.047993] fb0: VESA VGA frame buffer device
+[   22.177237] init: plymouth-splash main process (973) terminated with status 1
+[   22.207655] audit_printk_skb: 15 callbacks suppressed
+[   22.207673] type=1400 audit(1327582803.714:17): apparmor="STATUS" operation="profile_replace" name="/usr/lib/cups/backend/cups-pdf" pid=977 comm="apparmor_parser"
+[   22.209045] type=1400 audit(1327582803.718:18): apparmor="STATUS" operation="profile_replace" name="/usr/sbin/cupsd" pid=977 comm="apparmor_parser"
+[   25.768180] eth0: no IPv6 routers present
+[  139.558737] type=1400 audit(1332487317.997:19): apparmor="STATUS" operation="profile_replace" name="/usr/lib/lightdm/lightdm-guest-session-wrapper" pid=1490 comm="apparmor_parser"
+[  139.582467] type=1400 audit(1332487318.021:20): apparmor="STATUS" operation="profile_replace" name="/sbin/dhclient" pid=1491 comm="apparmor_parser"
+[  139.588563] type=1400 audit(1332487318.029:21): apparmor="STATUS" operation="profile_replace" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=1491 comm="apparmor_parser"
+[  139.588822] type=1400 audit(1332487318.029:22): apparmor="STATUS" operation="profile_replace" name="/usr/lib/connman/scripts/dhclient-script" pid=1491 comm="apparmor_parser"
+[  139.626125] type=1400 audit(1332487318.065:23): apparmor="STATUS" operation="profile_replace" name="/usr/bin/evince" pid=1492 comm="apparmor_parser"
+[  139.633020] type=1400 audit(1332487318.073:24): apparmor="STATUS" operation="profile_replace" name="/usr/bin/evince-previewer" pid=1492 comm="apparmor_parser"
+[  139.636812] type=1400 audit(1332487318.077:25): apparmor="STATUS" operation="profile_replace" name="/usr/bin/evince-thumbnailer" pid=1492 comm="apparmor_parser"
+[  139.658024] type=1400 audit(1332487318.097:26): apparmor="STATUS" operation="profile_replace" name="/usr/lib/telepathy/mission-control-5" pid=1494 comm="apparmor_parser"
+[  139.659231] type=1400 audit(1332487318.097:27): apparmor="STATUS" operation="profile_replace" name="/usr/lib/telepathy/telepathy-*" pid=1494 comm="apparmor_parser"
+[  139.671296] type=1400 audit(1332487318.109:28): apparmor="STATUS" operation="profile_replace" name="/usr/lib/cups/backend/cups-pdf" pid=1495 comm="apparmor_parser"
+[  139.902396] init: apport pre-start process (1517) terminated with status 1
+[  139.973317] init: apport post-stop process (1529) terminated with status 1
+[  140.963875] EXT4-fs (sda1): re-mounted. Opts: errors=remount-ro,commit=0
+[  141.473166] init: plymouth-stop pre-start process (1666) terminated with status 1
+[  279.353107] Inserted wrapfs successfully
+[  290.871523] wrapfs_mount called
+[  290.876940] wrapfs_read_super called
+[  290.918044] wrapfs: mounted on top of /root type ext4
+[  311.655683] Wrapfs:serched path = /sadas
+[  311.655813]  the modif tym of file is 1332487490 and upperis 1332487490
+[  311.655978] COPY FILE NEEDED=/sadas
+[  311.656013] Wrapfs: getrename path > Got request to delete sadas
+[  311.681454] Wrapfs:serched path = /root/sadas l= 0
+[  311.693041] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[  311.716005] Wrapfs:root path = /
+[  311.729272] calling frst vfs_lookup
+[  311.746646] called lookups err=0
+[  311.761569] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[  311.795708] newname=sadas.unrm
+[  311.814511] Calling secnd lookup
+[  311.834338] Called secnd lookup
+[  311.853529] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[  311.896207]  Returning from getrnme path
+[  311.921043] Creating copy with name /sls-data/sadas.unrm
+[  311.953022] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[  311.978279] wrapfs: NO error till here
+[  312.004679] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[  312.032825] wrapfs: NOw starting actual copy procedure...
+[  312.089372] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[  312.089519] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[  312.119874] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[  312.151979] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[  312.185810] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[  312.219871] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[  312.254059] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[  312.289452] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[  312.323049] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[  312.357167] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[  312.391230] wrapfs: position of read = 0,buf1=,ret=0,ctr=5
+[  312.424511] wrapfs: position of write = 24576,buf1=,ret=4096,ctr=5
+[  312.458524] wrapfs: position of read = 0,buf1=,ret=0,ctr=6
+[  312.490689] wrapfs: position of write = 28672,buf1=,ret=4096,ctr=6
+[  312.522743] wrapfs: position of read = 0,buf1=,ret=0,ctr=7
+[  312.554466] wrapfs: position of write = 32768,buf1=,ret=4096,ctr=7
+[  312.587127] wrapfs: position of read = 0,buf1=,ret=0,ctr=8
+[  312.618540] wrapfs: position of write = 36864,buf1=,ret=4096,ctr=8
+[  312.650376] wrapfs: position of read = 0,buf1=,ret=0,ctr=9
+[  312.679525] wrapfs: position of write = 40960,buf1=,ret=4096,ctr=9
+[  312.709768] wrapfs: ret = 4096
+[  490.941922] init: tty3 main process ended, respawning
+[  517.647994] Completed wrapfs module unload
+[  522.974021] Inserted wrapfs successfully
+[  539.683269] wrapfs_mount called
+[  539.683340] wrapfs_read_super called
+[  539.715723] wrapfs: mounted on top of /root type ext4
+[  559.521866] Wrapfs:serched path = /sadas
+[  559.522001]  the modif tym of file is 1332487737 and upperis 1332487737
+[  559.522158] COPY FILE NEEDED=/sadas
+[  559.522265] Wrapfs: getrename path > Got request to delete sadas
+[  559.536593] Wrapfs:serched path = /root/sadas l= 0
+[  559.549132] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[  559.570751] Wrapfs:root path = /
+[  559.583903] calling frst vfs_lookup
+[  559.598122] called lookups err=0
+[  559.613540] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[  559.649739] newname=sadas.unrm
+[  559.668684] Calling secnd lookup
+[  559.688739] Called secnd lookup
+[  559.708430] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[  559.750865]  Returning from getrnme path
+[  559.774485] Creating copy with name /sls-data/sadas.unrm
+[  559.804892] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[  559.830092] wrapfs: NO error till here
+[  559.856141] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[  559.883682] wrapfs: NOw starting actual copy procedure...
+[  559.938942] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[  559.939078] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[  559.972418] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[  560.004826] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[  560.038190] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[  560.070915] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[  560.105401] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[  560.139483] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[  560.174270] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[  560.207126] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[  560.238803] wrapfs: ret = 4096
+[  964.838559] Completed wrapfs module unload
+[  970.117907] Inserted wrapfs successfully
+[ 1003.816945] wrapfs_mount called
+[ 1003.817001] wrapfs_read_super called
+[ 1003.847935] wrapfs: mounted on top of /root type ext4
+[ 1027.441504] Wrapfs:serched path = /sadas
+[ 1027.441683]  the modif tym of file is 1332488205 and upperis 1332488205
+[ 1027.441906] COPY FILE NEEDED=/sadas
+[ 1027.442067] Wrapfs: getrename path > Got request to delete sadas
+[ 1027.459139] Wrapfs:serched path = /root/sadas l= 0
+[ 1027.468685] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 1027.492229] Wrapfs:root path = /
+[ 1027.505344] calling frst vfs_lookup
+[ 1027.520361] called lookups err=0
+[ 1027.538158] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 1027.576334] newname=sadas.unrm
+[ 1027.603501] Calling secnd lookup
+[ 1027.624181] Called secnd lookup
+[ 1027.644444] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 1027.687273]  Returning from getrnme path
+[ 1027.710599] Creating copy with name /sls-data/sadas.unrm
+[ 1027.740194] wrapfs: in=dcb46180 offset=0
+[ 1027.764616] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[ 1027.790996] wrapfs: NO error till here
+[ 1027.817431] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[ 1027.845607] wrapfs: NOw starting actual copy procedure...
+[ 1027.902563] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[ 1027.902684] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[ 1027.934385] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[ 1027.970139] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[ 1028.002719] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[ 1028.037355] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[ 1028.071885] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[ 1028.106697] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[ 1028.139715] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[ 1028.172880] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[ 1028.204539] wrapfs: ret = 4096
+[ 1219.038266] Completed wrapfs module unload
+[ 1224.348236] Inserted wrapfs successfully
+[ 1471.736871] e1000: eth0 NIC Link is Down
+[ 1471.737729] usb 1-1: USB disconnect, device number 2
+[ 1472.276350] usb 1-1: new full speed USB device number 3 using ohci_hcd
+[ 1472.551998] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/input/input5
+[ 1472.554045] generic-usb 0003:80EE:0021.0002: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[ 1475.835490] Completed wrapfs module unload
+[ 1476.692634] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[ 1481.901263] Inserted wrapfs successfully
+[ 1495.215519] Completed wrapfs module unload
+[ 1596.067940] Inserted wrapfs successfully
+[ 1752.671925] wrapfs_mount called
+[ 1752.671995] wrapfs_read_super called
+[ 1752.707415] wrapfs: mounted on top of /root type ext4
+[ 1770.809048] Wrapfs:serched path = /sadas
+[ 1770.809184]  the modif tym of file is 1332488949 and upperis 1332488949
+[ 1770.809341] COPY FILE NEEDED=/sadas
+[ 1770.809448] Wrapfs: getrename path > Got request to delete sadas
+[ 1770.829860] Wrapfs:serched path = /root/sadas l= 0
+[ 1770.843991] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 1770.870328] Wrapfs:root path = /
+[ 1770.891090] calling frst vfs_lookup
+[ 1770.907770] called lookups err=0
+[ 1770.924851] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 1770.961223] newname=sadas.unrm
+[ 1770.982753] Calling secnd lookup
+[ 1771.006264] Called secnd lookup
+[ 1771.028435] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 1771.071071]  Returning from getrnme path
+[ 1771.096451] Creating copy with name /sls-data/sadas.unrm
+[ 1771.122507] here file attributes are fop=c154abc0
+[ 1771.240633] wrapfs: Read file=/root/sadas
+[ 1771.267979] wrapfs: in=dbe85600 offset=0
+[ 1771.296988] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[ 1771.326663] wrapfs: NO error till here
+[ 1771.356471] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[ 1771.387189] wrapfs: NOw starting actual copy procedure...
+[ 1771.457222] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[ 1771.457339] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[ 1771.523856] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[ 1771.523980] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[ 1771.657786] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[ 1771.657910] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[ 1771.724319] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[ 1771.724459] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[ 1771.808269] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[ 1771.808373] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[ 1771.841955] wrapfs: ret = 4096
+[ 1852.960195] Completed wrapfs module unload
+[ 1864.508348] Inserted wrapfs successfully
+[ 1869.320909] wrapfs_mount called
+[ 1869.320981] wrapfs_read_super called
+[ 1869.356928] wrapfs: mounted on top of /root type ext4
+[ 1882.985278] Wrapfs:serched path = /sadas
+[ 1882.985411]  the modif tym of file is 1332489061 and upperis 1332489061
+[ 1882.985567] COPY FILE NEEDED=/sadas
+[ 1882.985673] Wrapfs: getrename path > Got request to delete sadas
+[ 1883.010617] Wrapfs:serched path = /root/sadas l= 0
+[ 1883.028285] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 1883.060588] Wrapfs:root path = /
+[ 1883.077800] calling frst vfs_lookup
+[ 1883.096674] called lookups err=0
+[ 1883.116128] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 1883.155804] newname=sadas.unrm
+[ 1883.179000] Calling secnd lookup
+[ 1883.201879] Called secnd lookup
+[ 1883.225500] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 1883.271396]  Returning from getrnme path
+[ 1883.298082] Creating copy with name /sls-data/sadas.unrm
+[ 1883.326263] here file attributes are fop=c154abc0
+[ 1883.445864] wrapfs: Read file=/root/sadas
+[ 1883.475160] wrapfs: in=dc87ee40 offset=0 fop=c154abc0
+[ 1883.505377] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[ 1883.536719] wrapfs: NO error till here
+[ 1883.567249] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[ 1883.599726] wrapfs: NOw starting actual copy procedure...
+[ 1883.667102] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[ 1883.667205] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[ 1883.738688] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[ 1883.738812] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[ 1883.887845] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[ 1883.887983] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[ 1883.961719] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[ 1883.961858] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[ 1884.031222] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[ 1884.031339] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[ 1884.066063] wrapfs: ret = 4096
+[ 2145.959688] Completed wrapfs module unload
+[ 2157.850977] Inserted wrapfs successfully
+[ 2163.476434] wrapfs_mount called
+[ 2163.476506] wrapfs_read_super called
+[ 2163.508014] wrapfs: mounted on top of /root type ext4
+[ 2185.144808] Wrapfs:serched path = /sadas
+[ 2185.145001]  the modif tym of file is 1332489363 and upperis 1332489363
+[ 2185.145237] COPY FILE NEEDED=/sadas
+[ 2185.145398] Wrapfs: getrename path > Got request to delete sadas
+[ 2185.169218] Wrapfs:serched path = /root/sadas l= 0
+[ 2185.187058] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2185.218126] Wrapfs:root path = /
+[ 2185.234086] calling frst vfs_lookup
+[ 2185.251616] called lookups err=0
+[ 2185.270093] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2185.310741] newname=sadas.unrm
+[ 2185.333046] Calling secnd lookup
+[ 2185.356355] Called secnd lookup
+[ 2185.379618] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2185.426648]  Returning from getrnme path
+[ 2185.452989] Creating copy with name /sls-data/sadas.unrm
+[ 2185.480358] here file attributes are fop=c154abc0
+[ 2185.540259] wrapfs: Read file=/root/sadas
+[ 2185.569275] wrapfs: in=dc360a80 offset=0 fop=c154abc0 filepos=0
+[ 2185.600280] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[ 2185.632792] wrapfs: NO error till here
+[ 2185.665355] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[ 2185.798922] wrapfs: NOw starting actual copy procedure...
+[ 2185.869020] wrapfs: file read called 
+[ 2185.869627] wrapfs: position of read = 0,buf1=,ret=0,ctr=0
+[ 2185.909054] wrapfs: position of write = 4096,buf1=,ret=4096,ctr=0
+[ 2185.946717] wrapfs: file read called 
+[ 2186.021410] wrapfs: position of read = 0,buf1=,ret=0,ctr=1
+[ 2186.062145] wrapfs: position of write = 8192,buf1=,ret=4096,ctr=1
+[ 2186.100820] wrapfs: file read called 
+[ 2186.158371] wrapfs: position of read = 0,buf1=,ret=0,ctr=2
+[ 2186.197640] wrapfs: position of write = 12288,buf1=,ret=4096,ctr=2
+[ 2186.234642] wrapfs: file read called 
+[ 2186.289693] wrapfs: position of read = 0,buf1=,ret=0,ctr=3
+[ 2186.326645] wrapfs: position of write = 16384,buf1=,ret=4096,ctr=3
+[ 2186.362108] wrapfs: file read called 
+[ 2186.403718] wrapfs: position of read = 0,buf1=,ret=0,ctr=4
+[ 2186.458229] wrapfs: position of write = 20480,buf1=,ret=4096,ctr=4
+[ 2186.495078] wrapfs: ret = 4096
+[ 2471.098699] Completed wrapfs module unload
+[ 2483.083329] Inserted wrapfs successfully
+[ 2486.841132] wrapfs_mount called
+[ 2486.841204] wrapfs_read_super called
+[ 2486.872710] wrapfs: mounted on top of /root type ext4
+[ 2546.021482] Wrapfs:serched path = /sadas
+[ 2546.021616]  the modif tym of file is 1332489724 and upperis 1332489724
+[ 2546.021772] COPY FILE NEEDED=/sadas
+[ 2546.021877] Wrapfs: getrename path > Got request to delete sadas
+[ 2546.042598] Wrapfs:serched path = /root/sadas l= 0
+[ 2546.060276] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2546.090848] Wrapfs:root path = /
+[ 2546.106849] calling frst vfs_lookup
+[ 2546.123840] called lookups err=0
+[ 2546.142006] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2546.181191] newname=sadas.unrm
+[ 2546.201959] Calling secnd lookup
+[ 2546.224673] Called secnd lookup
+[ 2546.247163] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2546.293034]  Returning from getrnme path
+[ 2546.318444] Creating copy with name /sls-data/sadas.unrm
+[ 2546.345595] here file attributes are fop=c154abc0
+[ 2546.460246] wrapfs: Read file=/root/sadas
+[ 2546.488464] wrapfs: in=dbca40c0 offset=0 fop=c154abc0 filepos=0
+[ 2546.518086] wrapfs: infile dentry = dc739680, infile mnt=dbec1e40
+[ 2546.548005] wrapfs: NO error till here
+[ 2546.578557] wrapfs: outfile dentry = dc73b900, outfile mnt=dbec1e40
+[ 2546.616294] wrapfs: NOw starting actual copy procedure...
+[ 2546.683189] wrapfs: file read called 
+[ 2546.722789] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2546.722800] ,ret=48,ctr=0
+[ 2546.835032] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2546.835043] ,ret=4096,ctr=0
+[ 2546.946352] wrapfs: file read called 
+[ 2547.012856] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.012866] ,ret=48,ctr=1
+[ 2547.122535] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.122546] ,ret=4096,ctr=1
+[ 2547.233145] wrapfs: file read called 
+[ 2547.299795] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.299805] ,ret=48,ctr=2
+[ 2547.408333] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.408344] ,ret=4096,ctr=2
+[ 2547.522972] wrapfs: file read called 
+[ 2547.590045] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.590055] ,ret=48,ctr=3
+[ 2547.703653] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.703663] ,ret=4096,ctr=3
+[ 2547.822393] wrapfs: file read called 
+[ 2547.872308] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2547.872319] ,ret=48,ctr=4
+[ 2548.018667] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2548.018677] ,ret=4096,ctr=4
+[ 2548.134474] wrapfs: ret = 4096
+[ 2597.046428] Wrapfs:serched path = /error.1
+[ 2597.046511]  the modif tym of file is 1332489775 and upperis 1332489775
+[ 2597.086366] COPY FILE NEEDED=/error.1
+[ 2597.125512] Wrapfs: getrename path > Got request to delete error.1
+[ 2597.168002] Wrapfs:serched path = /root/error.1 l= 0
+[ 2597.212373] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2597.293396] Wrapfs:root path = /
+[ 2597.334279] calling frst vfs_lookup
+[ 2597.375279] called lookups err=0
+[ 2597.415447] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2597.497439] newname=error.1.unrm
+[ 2597.535583] Calling secnd lookup
+[ 2597.577066] Called secnd lookup
+[ 2597.617309] Wrapfs: scnd lookup failed err=-2 
+[ 2597.655324]  Returning from getrnme path
+[ 2597.692868] Creating copy with name /sls-data/error.1.unrm
+[ 2597.732496] here file attributes are fop=c154abc0
+[ 2597.770557] wrapfs: Read file=/root/error.1
+[ 2597.811970] wrapfs: in=dc21d480 offset=0 fop=c154abc0 filepos=0
+[ 2597.848705] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2597.892740] wrapfs: NO error till here
+[ 2597.929945] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2598.091630] wrapfs: NOw starting actual copy procedure...
+[ 2598.162815] wrapfs: file read called 
+[ 2598.163383] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.163398] ,ret=48,ctr=0
+[ 2598.305849] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.305859] ,ret=4096,ctr=0
+[ 2598.429074] wrapfs: file read called 
+[ 2598.467946] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.467957] ,ret=48,ctr=1
+[ 2598.582815] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.582826] ,ret=4096,ctr=1
+[ 2598.696783] wrapfs: file read called 
+[ 2598.789997] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.790008] ,ret=48,ctr=2
+[ 2598.916214] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2598.916225] ,ret=4096,ctr=2
+[ 2599.038197] wrapfs: file read called 
+[ 2599.105272] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2599.105282] ,ret=48,ctr=3
+[ 2599.227972] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2599.227983] ,ret=4096,ctr=3
+[ 2599.354427] wrapfs: file read called 
+[ 2599.408187] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2599.408197] ,ret=48,ctr=4
+[ 2599.563036] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2599.563047] ,ret=4096,ctr=4
+[ 2599.689056] wrapfs: ret = 4096
+[ 2599.767954] Wrapfs:serched path = /error.1
+[ 2599.768001]  the modif tym of file is 1332489778 and upperis 1332489778
+[ 2599.812302] COPY FILE NEEDED=/error.1
+[ 2599.851167] Wrapfs: getrename path > Got request to delete error.1
+[ 2599.893030] Wrapfs:serched path = /root/error.1 l= 0
+[ 2599.935357] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2600.014170] Wrapfs:root path = /
+[ 2600.054377] calling frst vfs_lookup
+[ 2600.096703] called lookups err=0
+[ 2600.137559] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2600.216449] newname=error.1.unrm
+[ 2600.256722] Calling secnd lookup
+[ 2600.297108] Called secnd lookup
+[ 2600.336256] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2600.413955]  Returning from getrnme path
+[ 2600.452404] Creating copy with name /sls-data/error.1.unrm
+[ 2600.493259] here file attributes are fop=c154abc0
+[ 2600.580297] wrapfs: Read file=/root/error.1
+[ 2600.619984] wrapfs: in=dbc46900 offset=0 fop=c154abc0 filepos=0
+[ 2600.658711] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2600.699647] wrapfs: NO error till here
+[ 2600.739039] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2600.779308] wrapfs: NOw starting actual copy procedure...
+[ 2600.860164] wrapfs: file read called 
+[ 2600.900256] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2600.900266] ,ret=48,ctr=0
+[ 2601.101434] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.101445] ,ret=4096,ctr=0
+[ 2601.219676] wrapfs: file read called 
+[ 2601.258486] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.258497] ,ret=48,ctr=1
+[ 2601.376634] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.376644] ,ret=4096,ctr=1
+[ 2601.494453] wrapfs: file read called 
+[ 2601.582483] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.582494] ,ret=48,ctr=2
+[ 2601.698085] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.698096] ,ret=4096,ctr=2
+[ 2601.822003] wrapfs: file read called 
+[ 2601.876374] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2601.876384] ,ret=48,ctr=3
+[ 2602.022227] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2602.022239] ,ret=4096,ctr=3
+[ 2602.143854] wrapfs: file read called 
+[ 2602.185541] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2602.185551] ,ret=48,ctr=4
+[ 2602.307171] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2602.307181] ,ret=4096,ctr=4
+[ 2602.430004] wrapfs: ret = 4096
+[ 2602.560393] Wrapfs:serched path = /error.1
+[ 2602.560473]  the modif tym of file is 1332489780 and upperis 1332489780
+[ 2602.601568] COPY FILE NEEDED=/error.1
+[ 2602.639355] Wrapfs: getrename path > Got request to delete error.1
+[ 2602.679587] Wrapfs:serched path = /root/error.1 l= 0
+[ 2602.722247] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2602.803381] Wrapfs:root path = /
+[ 2602.843226] calling frst vfs_lookup
+[ 2602.891375] called lookups err=0
+[ 2602.931230] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2603.005790] newname=error.1.unrm
+[ 2603.044224] Calling secnd lookup
+[ 2603.082160] Called secnd lookup
+[ 2603.118789] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2603.192307]  Returning from getrnme path
+[ 2603.228393] Creating copy with name /sls-data/error.1.unrm
+[ 2603.266849] here file attributes are fop=c154abc0
+[ 2603.304499] wrapfs: Read file=/root/error.1
+[ 2603.340616] wrapfs: in=dbc46e40 offset=0 fop=c154abc0 filepos=0
+[ 2603.376853] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2603.414423] wrapfs: NO error till here
+[ 2603.450980] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2603.485848] wrapfs: NOw starting actual copy procedure...
+[ 2603.558064] wrapfs: file read called 
+[ 2603.600250] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2603.600260] ,ret=48,ctr=0
+[ 2603.807463] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2603.807474] ,ret=4096,ctr=0
+[ 2603.921494] wrapfs: file read called 
+[ 2603.958911] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2603.958922] ,ret=48,ctr=1
+[ 2604.068586] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.068596] ,ret=4096,ctr=1
+[ 2604.180268] wrapfs: file read called 
+[ 2604.264564] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.264575] ,ret=48,ctr=2
+[ 2604.376941] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.376952] ,ret=4096,ctr=2
+[ 2604.492461] wrapfs: file read called 
+[ 2604.540234] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.540244] ,ret=48,ctr=3
+[ 2604.686157] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.686168] ,ret=4096,ctr=3
+[ 2604.803598] wrapfs: file read called 
+[ 2604.842687] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.842697] ,ret=48,ctr=4
+[ 2604.958678] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2604.958689] ,ret=4096,ctr=4
+[ 2605.075218] wrapfs: ret = 4096
+[ 2605.202481] Wrapfs:serched path = /error.1
+[ 2605.202559]  the modif tym of file is 1332489783 and upperis 1332489783
+[ 2605.241724] COPY FILE NEEDED=/error.1
+[ 2605.278365] Wrapfs: getrename path > Got request to delete error.1
+[ 2605.316822] Wrapfs:serched path = /root/error.1 l= 0
+[ 2605.356998] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2605.432296] Wrapfs:root path = /
+[ 2605.469548] calling frst vfs_lookup
+[ 2605.508316] called lookups err=0
+[ 2605.546949] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2605.621653] newname=error.1.unrm
+[ 2605.659980] Calling secnd lookup
+[ 2605.698280] Called secnd lookup
+[ 2605.735251] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2605.811142]  Returning from getrnme path
+[ 2605.848004] Creating copy with name /sls-data/error.1.unrm
+[ 2605.886847] here file attributes are fop=c154abc0
+[ 2606.008276] wrapfs: Read file=/root/error.1
+[ 2606.045680] wrapfs: in=dc360600 offset=0 fop=c154abc0 filepos=0
+[ 2606.082713] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2606.120729] wrapfs: NO error till here
+[ 2606.157935] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2606.231835] wrapfs: NOw starting actual copy procedure...
+[ 2606.305177] wrapfs: file read called 
+[ 2606.305759] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2606.305769] ,ret=48,ctr=0
+[ 2606.435998] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2606.436014] ,ret=4096,ctr=0
+[ 2606.548212] wrapfs: file read called 
+[ 2606.586194] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2606.586205] ,ret=48,ctr=1
+[ 2606.696177] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2606.696188] ,ret=4096,ctr=1
+[ 2606.811470] wrapfs: file read called 
+[ 2606.896348] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2606.896358] ,ret=48,ctr=2
+[ 2607.007010] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2607.007020] ,ret=4096,ctr=2
+[ 2607.121912] wrapfs: file read called 
+[ 2607.172306] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2607.172316] ,ret=48,ctr=3
+[ 2607.316338] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2607.316349] ,ret=4096,ctr=3
+[ 2607.434277] wrapfs: file read called 
+[ 2607.473774] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2607.473785] ,ret=48,ctr=4
+[ 2607.588718] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2607.588729] ,ret=4096,ctr=4
+[ 2607.704187] wrapfs: ret = 4096
+[ 2607.832270] Wrapfs:serched path = /error.1
+[ 2607.832346]  the modif tym of file is 1332489786 and upperis 1332489786
+[ 2607.871106] COPY FILE NEEDED=/error.1
+[ 2607.907212] Wrapfs: getrename path > Got request to delete error.1
+[ 2607.945185] Wrapfs:serched path = /root/error.1 l= 0
+[ 2607.984895] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2608.058874] Wrapfs:root path = /
+[ 2608.096363] calling frst vfs_lookup
+[ 2608.135011] called lookups err=0
+[ 2608.173197] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2608.246384] newname=error.1.unrm
+[ 2608.284383] Calling secnd lookup
+[ 2608.321306] Called secnd lookup
+[ 2608.357407] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2608.430018]  Returning from getrnme path
+[ 2608.465554] Creating copy with name /sls-data/error.1.unrm
+[ 2608.503019] here file attributes are fop=c154abc0
+[ 2608.552323] wrapfs: Read file=/root/error.1
+[ 2608.587869] wrapfs: in=dcde0240 offset=0 fop=c154abc0 filepos=0
+[ 2608.623795] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2608.661140] wrapfs: NO error till here
+[ 2608.697874] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2608.733316] wrapfs: NOw starting actual copy procedure...
+[ 2608.809510] wrapfs: file read called 
+[ 2608.809627] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2608.809636] ,ret=48,ctr=0
+[ 2608.984265] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2608.984280] ,ret=4096,ctr=0
+[ 2609.097184] wrapfs: file read called 
+[ 2609.209463] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.209473] ,ret=48,ctr=1
+[ 2609.320324] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.320335] ,ret=4096,ctr=1
+[ 2609.431978] wrapfs: file read called 
+[ 2609.499653] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.499664] ,ret=48,ctr=2
+[ 2609.610449] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.610460] ,ret=4096,ctr=2
+[ 2609.725030] wrapfs: file read called 
+[ 2609.772309] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.772320] ,ret=48,ctr=3
+[ 2609.919699] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2609.919709] ,ret=4096,ctr=3
+[ 2610.035747] wrapfs: file read called 
+[ 2610.074746] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2610.074756] ,ret=48,ctr=4
+[ 2610.189969] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2610.189981] ,ret=4096,ctr=4
+[ 2610.305290] wrapfs: ret = 4096
+[ 2610.431219] Wrapfs:serched path = /error.1
+[ 2610.431297]  the modif tym of file is 1332489788 and upperis 1332489788
+[ 2610.470625] COPY FILE NEEDED=/error.1
+[ 2610.507309] Wrapfs: getrename path > Got request to delete error.1
+[ 2610.545844] Wrapfs:serched path = /root/error.1 l= 0
+[ 2610.586481] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2610.661412] Wrapfs:root path = /
+[ 2610.698973] calling frst vfs_lookup
+[ 2610.737811] called lookups err=0
+[ 2610.777071] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2610.852206] newname=error.1.unrm
+[ 2610.890951] Calling secnd lookup
+[ 2610.928004] Called secnd lookup
+[ 2610.965322] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2611.039577]  Returning from getrnme path
+[ 2611.076003] Creating copy with name /sls-data/error.1.unrm
+[ 2611.114387] here file attributes are fop=c154abc0
+[ 2611.164238] wrapfs: Read file=/root/error.1
+[ 2611.201111] wrapfs: in=dcde0e40 offset=0 fop=c154abc0 filepos=0
+[ 2611.238170] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2611.276418] wrapfs: NO error till here
+[ 2611.314496] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2611.458447] wrapfs: NOw starting actual copy procedure...
+[ 2611.532514] wrapfs: file read called 
+[ 2611.533114] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2611.533123] ,ret=48,ctr=0
+[ 2611.663147] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2611.663157] ,ret=4096,ctr=0
+[ 2611.777135] wrapfs: file read called 
+[ 2611.815135] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2611.815145] ,ret=48,ctr=1
+[ 2611.924488] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2611.924498] ,ret=4096,ctr=1
+[ 2612.034426] wrapfs: file read called 
+[ 2612.117262] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.117272] ,ret=48,ctr=2
+[ 2612.226570] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.226582] ,ret=4096,ctr=2
+[ 2612.341832] wrapfs: file read called 
+[ 2612.396282] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.396292] ,ret=48,ctr=3
+[ 2612.535078] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.535101] ,ret=4096,ctr=3
+[ 2612.652006] wrapfs: file read called 
+[ 2612.691125] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.691136] ,ret=48,ctr=4
+[ 2612.807707] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2612.807718] ,ret=4096,ctr=4
+[ 2612.923915] wrapfs: ret = 4096
+[ 2613.050752] Wrapfs:serched path = /error.1
+[ 2613.050830]  the modif tym of file is 1332489791 and upperis 1332489791
+[ 2613.090291] COPY FILE NEEDED=/error.1
+[ 2613.126921] Wrapfs: getrename path > Got request to delete error.1
+[ 2613.165281] Wrapfs:serched path = /root/error.1 l= 0
+[ 2613.205080] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2613.279482] Wrapfs:root path = /
+[ 2613.317094] calling frst vfs_lookup
+[ 2613.355898] called lookups err=0
+[ 2613.394616] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2613.468602] newname=error.1.unrm
+[ 2613.506963] Calling secnd lookup
+[ 2613.544235] Called secnd lookup
+[ 2613.581435] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2613.654667]  Returning from getrnme path
+[ 2613.690565] Creating copy with name /sls-data/error.1.unrm
+[ 2613.728227] here file attributes are fop=c154abc0
+[ 2613.808250] wrapfs: Read file=/root/error.1
+[ 2613.844587] wrapfs: in=dd4b6480 offset=0 fop=c154abc0 filepos=0
+[ 2613.881411] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2613.918806] wrapfs: NO error till here
+[ 2613.955357] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2614.068922] wrapfs: NOw starting actual copy procedure...
+[ 2614.142164] wrapfs: file read called 
+[ 2614.142739] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.142748] ,ret=48,ctr=0
+[ 2614.271988] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.271995] ,ret=4096,ctr=0
+[ 2614.385321] wrapfs: file read called 
+[ 2614.423588] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.423598] ,ret=48,ctr=1
+[ 2614.534309] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.534320] ,ret=4096,ctr=1
+[ 2614.645222] wrapfs: file read called 
+[ 2614.729071] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.729081] ,ret=48,ctr=2
+[ 2614.842199] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2614.842210] ,ret=4096,ctr=2
+[ 2614.956350] wrapfs: file read called 
+[ 2615.004531] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2615.004540] ,ret=48,ctr=3
+[ 2615.147179] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2615.147191] ,ret=4096,ctr=3
+[ 2615.263125] wrapfs: file read called 
+[ 2615.302155] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2615.302167] ,ret=48,ctr=4
+[ 2615.416290] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2615.416301] ,ret=4096,ctr=4
+[ 2615.533085] wrapfs: ret = 4096
+[ 2615.663086] Wrapfs:serched path = /error.1
+[ 2615.663162]  the modif tym of file is 1332489794 and upperis 1332489794
+[ 2615.702312] COPY FILE NEEDED=/error.1
+[ 2615.738654] Wrapfs: getrename path > Got request to delete error.1
+[ 2615.778627] Wrapfs:serched path = /root/error.1 l= 0
+[ 2615.819702] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2615.893919] Wrapfs:root path = /
+[ 2615.931406] calling frst vfs_lookup
+[ 2615.970300] called lookups err=0
+[ 2616.009019] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2616.083150] newname=error.1.unrm
+[ 2616.121605] Calling secnd lookup
+[ 2616.158842] Called secnd lookup
+[ 2616.195274] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2616.268003]  Returning from getrnme path
+[ 2616.304417] Creating copy with name /sls-data/error.1.unrm
+[ 2616.343238] here file attributes are fop=c154abc0
+[ 2616.381356] wrapfs: Read file=/root/error.1
+[ 2616.417558] wrapfs: in=dbca4cc0 offset=0 fop=c154abc0 filepos=0
+[ 2616.454288] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2616.491998] wrapfs: NO error till here
+[ 2616.529010] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2616.644323] wrapfs: NOw starting actual copy procedure...
+[ 2616.718857] wrapfs: file read called 
+[ 2616.772439] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2616.772450] ,ret=48,ctr=0
+[ 2616.881753] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2616.881764] ,ret=4096,ctr=0
+[ 2616.993965] wrapfs: file read called 
+[ 2617.044278] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.044289] ,ret=48,ctr=1
+[ 2617.181803] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.181814] ,ret=4096,ctr=1
+[ 2617.292941] wrapfs: file read called 
+[ 2617.331186] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.331197] ,ret=48,ctr=2
+[ 2617.440889] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.440900] ,ret=4096,ctr=2
+[ 2617.557777] wrapfs: file read called 
+[ 2617.644260] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.644271] ,ret=48,ctr=3
+[ 2617.760512] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.760523] ,ret=4096,ctr=3
+[ 2617.880005] wrapfs: file read called 
+[ 2617.932302] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2617.932313] ,ret=48,ctr=4
+[ 2618.077171] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2618.077189] ,ret=4096,ctr=4
+[ 2618.195528] wrapfs: ret = 4096
+[ 2618.272505] Wrapfs:serched path = /error.1
+[ 2618.272569]  the modif tym of file is 1332489796 and upperis 1332489796
+[ 2618.311842] COPY FILE NEEDED=/error.1
+[ 2618.348144] Wrapfs: getrename path > Got request to delete error.1
+[ 2618.386381] Wrapfs:serched path = /root/error.1 l= 0
+[ 2618.426300] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2618.502109] Wrapfs:root path = /
+[ 2618.540198] calling frst vfs_lookup
+[ 2618.579890] called lookups err=0
+[ 2618.618773] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2618.692803] newname=error.1.unrm
+[ 2618.731666] Calling secnd lookup
+[ 2618.769081] Called secnd lookup
+[ 2618.809189] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2618.883061]  Returning from getrnme path
+[ 2618.919340] Creating copy with name /sls-data/error.1.unrm
+[ 2618.957839] here file attributes are fop=c154abc0
+[ 2619.040239] wrapfs: Read file=/root/error.1
+[ 2619.076254] wrapfs: in=de27a6c0 offset=0 fop=c154abc0 filepos=0
+[ 2619.112529] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2619.150109] wrapfs: NO error till here
+[ 2619.186825] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2619.317865] wrapfs: NOw starting actual copy procedure...
+[ 2619.390489] wrapfs: file read called 
+[ 2619.391062] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2619.391071] ,ret=48,ctr=0
+[ 2619.519551] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2619.519562] ,ret=4096,ctr=0
+[ 2619.632010] wrapfs: file read called 
+[ 2619.669827] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2619.669844] ,ret=48,ctr=1
+[ 2619.784960] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2619.784972] ,ret=4096,ctr=1
+[ 2619.897983] wrapfs: file read called 
+[ 2619.985687] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2619.985697] ,ret=48,ctr=2
+[ 2620.099901] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2620.099911] ,ret=4096,ctr=2
+[ 2620.215028] wrapfs: file read called 
+[ 2620.282294] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2620.282304] ,ret=48,ctr=3
+[ 2620.396403] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2620.396415] ,ret=4096,ctr=3
+[ 2620.514646] wrapfs: file read called 
+[ 2620.583863] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2620.583874] ,ret=48,ctr=4
+[ 2620.701739] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2620.701750] ,ret=4096,ctr=4
+[ 2620.821447] wrapfs: ret = 4096
+[ 2620.930988] Wrapfs:serched path = /error.1
+[ 2620.931076]  the modif tym of file is 1332489799 and upperis 1332489799
+[ 2620.970249] COPY FILE NEEDED=/error.1
+[ 2621.007060] Wrapfs: getrename path > Got request to delete error.1
+[ 2621.045412] Wrapfs:serched path = /root/error.1 l= 0
+[ 2621.085474] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2621.160249] Wrapfs:root path = /
+[ 2621.197577] calling frst vfs_lookup
+[ 2621.236321] called lookups err=0
+[ 2621.274834] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2621.349070] newname=error.1.unrm
+[ 2621.387443] Calling secnd lookup
+[ 2621.424616] Called secnd lookup
+[ 2621.460948] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2621.533848]  Returning from getrnme path
+[ 2621.570270] Creating copy with name /sls-data/error.1.unrm
+[ 2621.608263] here file attributes are fop=c154abc0
+[ 2621.651996] wrapfs: Read file=/root/error.1
+[ 2621.687388] wrapfs: in=dc361000 offset=0 fop=c154abc0 filepos=0
+[ 2621.723540] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2621.762013] wrapfs: NO error till here
+[ 2621.802029] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2621.948270] wrapfs: NOw starting actual copy procedure...
+[ 2622.021264] wrapfs: file read called 
+[ 2622.021817] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.021826] ,ret=48,ctr=0
+[ 2622.149664] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.149675] ,ret=4096,ctr=0
+[ 2622.260961] wrapfs: file read called 
+[ 2622.298164] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.298174] ,ret=48,ctr=1
+[ 2622.406487] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.406498] ,ret=4096,ctr=1
+[ 2622.516194] wrapfs: file read called 
+[ 2622.599262] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.599272] ,ret=48,ctr=2
+[ 2622.708655] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.708666] ,ret=4096,ctr=2
+[ 2622.828649] wrapfs: file read called 
+[ 2622.884318] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2622.884328] ,ret=48,ctr=3
+[ 2623.020520] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2623.020531] ,ret=4096,ctr=3
+[ 2623.135944] wrapfs: file read called 
+[ 2623.174877] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2623.174892] ,ret=48,ctr=4
+[ 2623.290918] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2623.290938] ,ret=4096,ctr=4
+[ 2623.406925] wrapfs: ret = 4096
+[ 2623.531809] Wrapfs:serched path = /error.1
+[ 2623.531888]  the modif tym of file is 1332489801 and upperis 1332489801
+[ 2623.570566] COPY FILE NEEDED=/error.1
+[ 2623.606595] Wrapfs: getrename path > Got request to delete error.1
+[ 2623.644338] Wrapfs:serched path = /root/error.1 l= 0
+[ 2623.684190] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2623.758742] Wrapfs:root path = /
+[ 2623.799602] calling frst vfs_lookup
+[ 2623.838467] called lookups err=0
+[ 2623.876825] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2623.950402] newname=error.1.unrm
+[ 2623.988124] Calling secnd lookup
+[ 2624.025125] Called secnd lookup
+[ 2624.061261] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2624.133653]  Returning from getrnme path
+[ 2624.169136] Creating copy with name /sls-data/error.1.unrm
+[ 2624.207247] here file attributes are fop=c154abc0
+[ 2624.256258] wrapfs: Read file=/root/error.1
+[ 2624.291754] wrapfs: in=dc361e40 offset=0 fop=c154abc0 filepos=0
+[ 2624.328152] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2624.365147] wrapfs: NO error till here
+[ 2624.401542] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2624.545369] wrapfs: NOw starting actual copy procedure...
+[ 2624.618641] wrapfs: file read called 
+[ 2624.619276] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2624.619286] ,ret=48,ctr=0
+[ 2624.748439] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2624.748449] ,ret=4096,ctr=0
+[ 2624.863647] wrapfs: file read called 
+[ 2624.901017] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2624.901027] ,ret=48,ctr=1
+[ 2625.010661] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.010671] ,ret=4096,ctr=1
+[ 2625.120566] wrapfs: file read called 
+[ 2625.203625] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.203636] ,ret=48,ctr=2
+[ 2625.312608] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.312618] ,ret=4096,ctr=2
+[ 2625.426708] wrapfs: file read called 
+[ 2625.492924] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.492934] ,ret=48,ctr=3
+[ 2625.605518] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.605529] ,ret=4096,ctr=3
+[ 2625.720209] wrapfs: file read called 
+[ 2625.790047] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.790057] ,ret=48,ctr=4
+[ 2625.905918] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2625.905929] ,ret=4096,ctr=4
+[ 2626.020682] wrapfs: ret = 4096
+[ 2626.100423] Wrapfs:serched path = /error.1
+[ 2626.100494]  the modif tym of file is 1332489804 and upperis 1332489804
+[ 2626.138872] COPY FILE NEEDED=/error.1
+[ 2626.174903] Wrapfs: getrename path > Got request to delete error.1
+[ 2626.212297] Wrapfs:serched path = /root/error.1 l= 0
+[ 2626.252813] Wrapfs: mntd on getrename path > / d_inode=ddf7a2e0 operations=  (null)  test opes=  (null) is root=1 inode_num=2
+[ 2626.327552] Wrapfs:root path = /
+[ 2626.365300] calling frst vfs_lookup
+[ 2626.404327] called lookups err=0
+[ 2626.443131] wrapfs: no error in movepjkhkjhk dentry =dc73b980 name=sls-data inode=dc76e2e0 op=  (null)
+[ 2626.516644] newname=error.1.unrm
+[ 2626.554531] Calling secnd lookup
+[ 2626.591433] Called secnd lookup
+[ 2626.627622] wrapfs: no error in krn_path so lowerparent path= means file already exists *OVERWRITE*
+[ 2626.700764]  Returning from getrnme path
+[ 2626.736897] Creating copy with name /sls-data/error.1.unrm
+[ 2626.775029] here file attributes are fop=c154abc0
+[ 2626.935827] wrapfs: Read file=/root/error.1
+[ 2626.971494] wrapfs: in=dc361600 offset=0 fop=c154abc0 filepos=0
+[ 2627.007887] wrapfs: infile dentry = d1054280, infile mnt=dbec1e40
+[ 2627.045502] wrapfs: NO error till here
+[ 2627.081932] wrapfs: outfile dentry = d1054300, outfile mnt=dbec1e40
+[ 2627.119421] wrapfs: NOw starting actual copy procedure...
+[ 2627.192246] wrapfs: file read called 
+[ 2627.192353] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.192362] ,ret=48,ctr=0
+[ 2627.296909] wrapfs: position of write = 4096,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.296919] ,ret=4096,ctr=0
+[ 2627.407997] wrapfs: file read called 
+[ 2627.515585] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.515595] ,ret=48,ctr=1
+[ 2627.627678] wrapfs: position of write = 8192,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.627697] ,ret=4096,ctr=1
+[ 2627.740004] wrapfs: file read called 
+[ 2627.788335] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.788345] ,ret=48,ctr=2
+[ 2627.935420] wrapfs: position of write = 12288,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2627.935431] ,ret=4096,ctr=2
+[ 2628.051460] wrapfs: file read called 
+[ 2628.090215] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2628.090226] ,ret=48,ctr=3
+[ 2628.202832] wrapfs: position of write = 16384,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2628.202843] ,ret=4096,ctr=3
+[ 2628.318163] wrapfs: file read called 
+[ 2628.402026] wrapfs: position of read = 0,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2628.402037] ,ret=48,ctr=4
+[ 2628.517725] wrapfs: position of write = 20480,buf1=kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+[ 2628.517736] ,ret=4096,ctr=4
+[ 2628.633490] wrapfs: ret = 4096

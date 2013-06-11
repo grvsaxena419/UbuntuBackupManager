@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="userprog"
+                     displayName="userprog"
+                     projectFiles="true"
+                     root=".">
+        <itemPath>backup.c</itemPath>
+        <itemPath>helpers.c</itemPath>
+        <itemPath>main.c</itemPath>
+        <itemPath>restore.c</itemPath>
+        <itemPath>restorepoint.c</itemPath>
+        <itemPath>sqlite_db_functions.c</itemPath>
+        <itemPath>userprog.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>/home/gs/finalyrprj/project_integrated/userprog/Makefile</itemPath>
+      <itemPath>/home/gs/finalyrprj/project_integrated/userprog/userprog</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/home/gs/finalyrprj/project_integrated/userprog</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>userprog</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+          </cTool>
+        </makeTool>
+      </makefileType>
+      <item path="backup.c" ex="false" tool="0" flavor="2">
+      </item>
+      <item path="helpers.c" ex="false" tool="0" flavor="2">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor="2">
+      </item>
+      <item path="restore.c" ex="false" tool="0" flavor="2">
+      </item>
+      <item path="sqlite_db_functions.c" ex="false" tool="0" flavor="2">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

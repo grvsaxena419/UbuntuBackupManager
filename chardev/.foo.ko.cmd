@@ -1,0 +1,1 @@
+cmd_/home/gs/finalyrprj/integration3/foo.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-3.0.0-15-generic/scripts/module-common.lds --build-id  -o /home/gs/finalyrprj/integration3/foo.ko /home/gs/finalyrprj/integration3/foo.o /home/gs/finalyrprj/integration3/foo.mod.o

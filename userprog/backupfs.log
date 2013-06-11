@@ -1,0 +1,6 @@
+
+trying to open //sls-data/backupfs.db
+trying to open //sls-data/backupfs.db
+delete from backup where rp_time=1335515673 and access_time>1335515544 ;
+update backup set rp_time=1335515544 where rp_time=1335515673;
+delete from restorepoint where rp_time=1335515673;

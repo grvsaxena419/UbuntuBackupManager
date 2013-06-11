@@ -1,0 +1,1 @@
+cmd_/home/gaurav/finalyrprj/project_integrated_v1.3/chardev/chardev.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.8.0-23-generic/scripts/module-common.lds --build-id  -o /home/gaurav/finalyrprj/project_integrated_v1.3/chardev/chardev.ko /home/gaurav/finalyrprj/project_integrated_v1.3/chardev/chardev.o /home/gaurav/finalyrprj/project_integrated_v1.3/chardev/chardev.mod.o

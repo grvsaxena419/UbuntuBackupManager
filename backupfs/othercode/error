@@ -1,0 +1,149 @@
+
+[ 2695.804899] PM: restore of drv: dev:ep_00 complete after 234.962 msecs
+[ 2695.804911] PM: restore of drv:hub dev:1-0:1.0 complete after 235.059 msecs
+[ 2695.804917] PM: restore of drv:hub dev:2-0:1.0 complete after 235.054 msecs
+[ 2695.804932] PM: restore of drv: dev:ep_00 complete after 235.077 msecs
+[ 2695.804940] PM: restore of drv: dev:ep_81 complete after 235.081 msecs
+[ 2695.804949] PM: restore of drv: dev:ep_81 complete after 235.035 msecs
+[ 2695.888729] ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[ 2695.890776] ata1.00: configured for UDMA/100
+[ 2695.896757] ata5: SATA link down (SStatus 0 SControl 300)
+[ 2695.904692] ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+[ 2695.909048] ata2.00: configured for UDMA/100
+[ 2695.916678] usb 1-1: reset high speed USB device number 2 using ehci_hcd
+[ 2695.968691] PM: restore of drv:sd dev:0:0:0:0 complete after 399.055 msecs
+[ 2695.968741] PM: restore of drv:scsi_disk dev:0:0:0:0 complete after 292.470 msecs
+[ 2695.968745] PM: restore of drv:scsi_device dev:0:0:0:0 complete after 399.066 msecs
+[ 2695.974413] PM: restore of drv:i915 dev:0000:00:02.0 complete after 412.959 msecs
+[ 2696.160159] usb 2-1: reset high speed USB device number 2 using ehci_hcd
+[ 2696.256048] PM: restore of drv: dev:ep_00 complete after 686.874 msecs
+[ 2696.256057] PM: restore of drv:hub dev:1-1:1.0 complete after 686.917 msecs
+[ 2696.256163] PM: restore of drv: dev:ep_81 complete after 687.007 msecs
+[ 2696.363986] usb 1-1.4: reset full speed USB device number 3 using ehci_hcd
+[ 2696.457351] PM: restore of drv: dev:ep_00 complete after 888.431 msecs
+[ 2696.457362] PM: restore of drv:usb dev:1-1.4:1.0 complete after 888.502 msecs
+[ 2696.457394] PM: restore of drv: dev:ep_82 complete after 888.490 msecs
+[ 2696.457404] PM: restore of drv: dev:ep_81 complete after 888.515 msecs
+[ 2696.457410] PM: restore of drv: dev:ep_01 complete after 888.537 msecs
+[ 2696.499561] PM: restore of drv: dev:ep_00 complete after 930.811 msecs
+[ 2696.499571] PM: restore of drv:hub dev:2-1:1.0 complete after 930.853 msecs
+[ 2696.499629] PM: restore of drv: dev:ep_81 complete after 930.895 msecs
+[ 2696.571518] usb 2-1.6: reset high speed USB device number 4 using ehci_hcd
+[ 2696.688070] PM: restore of drv:uvcvideo dev:2-1.6:1.1 complete after 1119.555 msecs
+[ 2696.688081] PM: restore of drv:uvcvideo dev:2-1.6:1.0 complete after 1119.594 msecs
+[ 2696.688107] PM: restore of drv: dev:ep_83 complete after 1119.606 msecs
+[ 2696.688113] PM: restore of drv: dev:ep_00 complete after 1119.582 msecs
+[ 2696.688121] PM: restore of drv:video4linux dev:video0 complete after 715.052 msecs
+[ 2697.311053] PM: restore of drv:hp-wmi dev:hp-wmi complete after 624.084 msecs
+[ 2697.311063] PM: restore of devices complete after 1752.341 msecs
+[ 2697.311160] PM: Image restored successfully.
+[ 2697.311161] Restarting tasks ... done.
+[ 2697.312439] PM: Basic memory bitmaps freed
+[ 2697.312445] video LNXVIDEO:00: Restoring backlight state
+[ 2699.291844] [drm:drm_mode_getfb] *ERROR* invalid framebuffer id
+[ 2703.817509] EXT4-fs (sda6): re-mounted. Opts: errors=remount-ro,commit=0
+[ 2704.380055] EXT4-fs (sda8): re-mounted. Opts: commit=0
+[ 2704.916664] ieee80211 phy0: wl_ops_config: change monitor mode: false (implement)
+[ 2704.916671] ieee80211 phy0: wl_ops_config: change power-save mode: false (implement)
+[ 2704.918099] ieee80211 phy0: wl_ops_bss_info_changed: qos enabled: false (implement)
+[ 2704.918343] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 5145.984760] r8169 0000:01:00.0: eth0: link down
+[ 5145.984768] r8169 0000:01:00.0: eth0: link down
+[ 5145.985008] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[ 5145.995217] ieee80211 phy0: wl_ops_config: change monitor mode: false (implement)
+[ 5145.995224] ieee80211 phy0: wl_ops_config: change power-save mode: false (implement)
+[ 5145.996663] ieee80211 phy0: wl_ops_bss_info_changed: qos enabled: false (implement)
+[ 5145.996837] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[ 5147.564066] r8169 0000:01:00.0: eth0: link up
+[ 5147.564358] ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[ 5157.642415] eth0: no IPv6 routers present
+[10488.928927] r8169 0000:01:00.0: eth0: link down
+[10488.928938] r8169 0000:01:00.0: eth0: link down
+[10488.929192] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[10488.938881] ieee80211 phy0: wl_ops_config: change monitor mode: false (implement)
+[10488.938886] ieee80211 phy0: wl_ops_config: change power-save mode: false (implement)
+[10488.940301] ieee80211 phy0: wl_ops_bss_info_changed: qos enabled: false (implement)
+[10488.940472] ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[10490.518826] r8169 0000:01:00.0: eth0: link up
+[10490.519046] ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[10501.188238] eth0: no IPv6 routers present
+[10722.378329] warning: `VirtualBox' uses 32-bit capabilities (legacy support in use)
+[12038.029503] Inserted wrapfs successfully
+[12066.382549] wrapfs: mounted on top of /home/gs1 type ext4
+[12079.643672] Wrapfs:Got request to delete .profile
+[12079.643679] Wrapfs:Got request to delete .profile
+[12079.643682] Wrapfs:Got request to delete .profile
+[12079.643686]  iteration  |1|
+[12079.643688]  |.profile|
+[12079.643690]  |gs1|
+[12079.643692] strcmp val = 1
+[12079.643694]  iteration  |1|
+[12079.643697]  |gs1|
+[12079.643699]  |/|
+[12079.643701] strcmp val = 0
+[12079.643704] ----------------Data .profile gs1  / /
+[12079.643710] / !!!Inode no / -278507880 2 > Got request to delete  
+[12079.643713] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1  
+[12079.643716] Wrapfs: getrename path > Got request to delete .profile 
+[12079.643721] Wrapfs:serched path = /gs1/.profile l= 0
+[12079.643726] Wrapfs: mntd on getrename path > home d_inode=f6a5e158 operations=  (null)
+[12079.643730] Wrapfs: mntd on getrename path > home d_inode=f6a5e158 operations=  (null)
+[12079.643733] Wrapfs:root path = /home
+[12079.643735] name not /
+[12079.643738]  newname is home and len is 4
+[12079.643741] ------------[ cut here ]------------
+[12079.643753] WARNING: at /build/buildd/linux-3.0.0/fs/namei.c:1732 lookup_one_len+0x12d/0x180()
+[12079.643757] Hardware name: HP Pavilion dM4 Notebook PC     
+[12079.643759] Modules linked in: wrapfs xt_TCPMSS xt_tcpmss xt_tcpudp iptable_mangle ip_tables x_tables pppoe pppox rfcomm bnep bluetooth pci_stub vboxpci vboxnetadp vboxnetflt vboxdrv parport_pc ppdev binfmt_misc snd_hda_codec_hdmi snd_hda_codec_idt wl(P) lib80211 bcma arc4 joydev hp_wmi sparse_keymap uvcvideo videodev snd_hda_intel snd_hda_codec snd_hwdep psmouse serio_raw snd_pcm snd_seq_midi snd_rawmidi snd_seq_midi_event snd_seq brcmsmac(C) snd_timer snd_seq_device brcmutil(C) intel_ips snd mac80211 cfg80211 soundcore snd_page_alloc crc_ccitt hp_accel lis3lv02d input_polldev mei(C) wmi i915 drm_kms_helper drm i2c_algo_bit video lp parport r8169 ahci libahci
+[12079.643847] Pid: 5909, comm: rm Tainted: P         C  3.0.0-15-generic #25-Ubuntu
+[12079.643850] Call Trace:
+[12079.643858]  [<c151a922>] ? printk+0x2d/0x2f
+[12079.643868]  [<c1047c02>] warn_slowpath_common+0x72/0xa0
+[12079.643874]  [<c1132d2d>] ? lookup_one_len+0x12d/0x180
+[12079.643879]  [<c1132d2d>] ? lookup_one_len+0x12d/0x180
+[12079.643884]  [<c1047c52>] warn_slowpath_null+0x22/0x30
+[12079.643890]  [<c1132d2d>] lookup_one_len+0x12d/0x180
+[12079.643897]  [<fa669766>] getrename_path+0x4d6/0x510 [wrapfs]
+[12079.643903]  [<fa6698a1>] wrapfs_unlink+0x101/0x230 [wrapfs]
+[12079.643912]  [<c11e5df0>] ? ext4_xattr_set_acl+0x160/0x160
+[12079.643918]  [<c1133e19>] vfs_unlink.part.22+0x69/0xe0
+[12079.643923]  [<c11330b5>] ? may_delete+0x65/0x90
+[12079.643928]  [<c1133ec3>] vfs_unlink+0x33/0x50
+[12079.643933]  [<c11364e7>] do_unlinkat+0x137/0x150
+[12079.643940]  [<c1136f2b>] sys_unlinkat+0x2b/0x40
+[12079.643945]  [<c152e424>] syscall_call+0x7/0xb
+[12079.643949] ---[ end trace edd8295769ee1df5 ]---
+[12079.643966]  newname is sls-data and len is 8
+[12079.643969] Wrapfs: mntd on getrename path > home d_inode=  (null) operations=  (null)
+[12079.643978] BUG: unable to handle kernel NULL pointer dereference at 00000024
+[12079.644083] IP: [<c1132c15>] lookup_one_len+0x15/0x180
+[12079.644151] *pde = 774af067 
+[12079.644191] Oops: 0000 [#1] SMP 
+[12079.644243] Modules linked in: wrapfs xt_TCPMSS xt_tcpmss xt_tcpudp iptable_mangle ip_tables x_tables pppoe pppox rfcomm bnep bluetooth pci_stub vboxpci vboxnetadp vboxnetflt vboxdrv parport_pc ppdev binfmt_misc snd_hda_codec_hdmi snd_hda_codec_idt wl(P) lib80211 bcma arc4 joydev hp_wmi sparse_keymap uvcvideo videodev snd_hda_intel snd_hda_codec snd_hwdep psmouse serio_raw snd_pcm snd_seq_midi snd_rawmidi snd_seq_midi_event snd_seq brcmsmac(C) snd_timer snd_seq_device brcmutil(C) intel_ips snd mac80211 cfg80211 soundcore snd_page_alloc crc_ccitt hp_accel lis3lv02d input_polldev mei(C) wmi i915 drm_kms_helper drm i2c_algo_bit video lp parport r8169 ahci libahci
+[12079.645171] 
+[12079.645194] Pid: 5909, comm: rm Tainted: P        WC  3.0.0-15-generic #25-Ubuntu Hewlett-Packard HP Pavilion dM4 Notebook PC     /146A
+[12079.645349] EIP: 0060:[<c1132c15>] EFLAGS: 00210296 CPU: 1
+[12079.645415] EIP is at lookup_one_len+0x15/0x180
+[12079.645470] EAX: 00000000 EBX: e4d1b000 ECX: 00000008 EDX: ef7ef300
+[12079.645544] ESI: ef7ef300 EDI: e4d1c000 EBP: cfc65e8c ESP: cfc65e6c
+[12079.645618]  DS: 007b ES: 007b FS: 00d8 GS: 00e0 SS: 0068
+[12079.645683] Process rm (pid: 5909, ti=cfc64000 task=f3cd4c80 task.ti=cfc64000)
+[12079.645766] Stack:
+[12079.645792]  55bd808e 00000008 ef7ef300 e4d1c000 cfc65e8c 00000008 ef7ef300 e4d1c000
+[12079.645912]  cfc65ebc fa6694ea fa66b6d4 ef7ef324 00000000 00000000 f3ba76a4 eb479d00
+[12079.646030]  e4d1b000 eb479d00 eb479980 c81dac80 cfc65ef4 fa6698a1 cfc65edc eb479980
+[12079.646150] Call Trace:
+[12079.646184]  [<fa6694ea>] getrename_path+0x25a/0x510 [wrapfs]
+[12079.646255]  [<fa6698a1>] wrapfs_unlink+0x101/0x230 [wrapfs]
+[12079.646325]  [<c11e5df0>] ? ext4_xattr_set_acl+0x160/0x160
+[12079.646393]  [<c1133e19>] vfs_unlink.part.22+0x69/0xe0
+[12079.646457]  [<c11330b5>] ? may_delete+0x65/0x90
+[12079.646514]  [<c1133ec3>] vfs_unlink+0x33/0x50
+[12079.646570]  [<c11364e7>] do_unlinkat+0x137/0x150
+[12079.646630]  [<c1136f2b>] sys_unlinkat+0x2b/0x40
+[12079.646686]  [<c152e424>] syscall_call+0x7/0xb
+[12079.646740] Code: ff ff 89 c3 eb b1 89 55 ec e8 e8 a2 00 00 8b 55 ec 89 d3 eb a2 90 55 89 e5 57 56 53 83 ec 14 3e 8d 74 26 00 89 c3 8b 42 20 89 d6 <8b> 40 24 83 f8 01 0f 84 ed 00 00 00 85 c9 b8 f3 ff ff ff 89 5d 
+[12079.650664] EIP: [<c1132c15>] lookup_one_len+0x15/0x180 SS:ESP 0068:cfc65e6c
+[12079.654381] CR2: 0000000000000024
+[12079.721780] ---[ end trace edd8295769ee1df6 ]---
+[12092.979563] [drm:drm_mode_getfb] *ERROR* invalid framebuffer id
